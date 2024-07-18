@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Project Bootstrap</title>
+  <!-- icon style sheets -->
+  <link rel="stylesheet" href="css/all.css" />
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300;400;600&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-secondary  sticky-top ">
+    <div class="container-fluid">
+      <input type="image" src="pictures/good.jpg" class="me-3 rounded-circle" height="40px" width="40px">
+      <a class=" text-light" href="#" style="border-right:1px solid #f9f9f9; padding-right: 10px; font-weight: bold;
+        text-decoration: none;">Good</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+          <li class="nav-item">
+            <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown links">
+            <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Courses
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" target="_blank" href="">python</a></li>
+              <li><a class="dropdown-item" target="_blank" href=""> java</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" target="_blank" href="">html</a></li>
+              <li><a class="dropdown-item" target="_blank" href="">css</a></li>
+              <li><a class="dropdown-item" target="_blank" href="">javascript</a></li>
+              <li><a class="dropdown-item" target="_blank" href="">bootstrap</a></li>
+              <li><a class="dropdown-item" target="_blank" href="">json</a></li>
+
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled text-light">About</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        </form>
+        <form class="d-flex me-5 ">
+          <button class="btn btn-outline-light me-2">Search</button>
+
+          <button class="btn btn-outline-light" type="button" data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop">Login</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div class="container-fluid p-0">
+    <!-- carousel -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+          aria-label="Slide 4"></button>
+
+      </div>
+      <div class="carousel-inner ">
+        <div class="carousel-item active">
+          <img src="pictures/1.webp" class="d-block w-100" height="550px">
+          <div class="carousel-caption">
+            <h1>html</h1>
+            <a href="" class="btn btn-danger" target="_blank">view this course</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="pictures/2.jpg" class="d-block w-100" height="550px">
+          <div class="carousel-caption">
+            <h1>css</h1>
+            <a href="" class="btn btn-primary" target="_blank">view this course</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="pictures/3.jpg" class="d-block w-100" height="550px">
+          <div class="carousel-caption">
+            <h1>javascript</h1>
+            <a href="" class="btn btn-success" target="_blank">view this course</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="pictures/4.jpg" class="d-block w-100" height="550px">
+          <div class="carousel-caption">
+            <h1>json</h1>
+            <a href="" class="btn btn-secondary" target="_blank">view this course</a>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+    <!-- cards -->
+    <div class="card p-4 bg-dark text-white stl ">
+      <div class="card-body">
+        <h2 class="card-title">Welcome</h2>
+        <p class="card-text">programming without language and without code.</p>
+        <a href="#" class="btn btn-primary mt-2">learn more</a>
+      </div>
+    </div>
+    <!-- collapse Accordion-->
+    <h1 class="text-center text-light bg-secondary p-3 m-0 stl1">Programming language </h1>
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button collapsed btn-outline-dark" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            Python Programming Language
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Python is powerful... and fast, plays well with others,runs everywhere, is friendly & easy to learn, is
+            Open. </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed btn-outline-dark" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Java Programming Language
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Java is a powerful general-purpose programming language. It is used to develop desktop and mobile
+            applications, big data processing, embedded systems, and so on. According to Oracle, the company that owns
+            Java, Java runs on 3 billion devices worldwide, which makes Java one of the most popular programming
+            languages. </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed btn-outline-dark" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Javascript Programming Language
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            JavaScript is a scripting or programming language that allows you to implement complex features on web
+            pages. </div>
+        </div>
+      </div>
+    </div> <!-- /collapse -->
+    <!-- card -->
+    <h1 class="text-center text-light bg-secondary p-3 m-0 ">Python is very easy</h1>
+    <div class="card bg-dark">
+      <div class="card-body">
+        <h4 class="text-light">Try The Code Below From <a
+            style="text-decoration: none; color: rgb(88, 88, 182) !important;" target="_blank">here</a>
+        </h4>
+        <div class="btn btn-sm btn-outline-light .btncopy::before .btncopy::after btncopy ">
+          copy
+        </div>
+        <pre>
+      <code class="text-info" id="mypython">
+        name = input('enter your name: '); print("Hello" + name)
+      </code>
+    </pre>
+      </div>
+    </div>
+    <h1 class="text-center text-light bg-secondary p-3 m-0 ">Java is very easy</h1>
+    <div class="card bg-dark">
+      <div class="card-body">
+        <h4 class="text-light">Try The Code Below From <a target="_blank"
+            style="text-decoration: none; color: rgb(88, 88, 182)!important;">here</a></h4>
+        <div class="btn btn-sm btn-outline-light .btncopy::before .btncopy::after btncopy">
+          copy
+        </div>
+        <pre>
+      <code class="text-info" id="myjava">
+        System.out.println("Hello World!");
+      </code>
+    </pre>
+      </div>
+    </div>
+    <h1 class="text-center text-light bg-secondary p-3 m-0 ">Javascript is very easy</h1>
+    <div class="card bg-dark">
+      <div class="card-body">
+        <h4 class="text-light">Try The Code Below From <a
+            style="text-decoration: none; color: rgb(88, 88, 182)!important;" target=" _blank">here</a></h4>
+        <div class="btn btn-sm btn-outline-light .btncopy::before .btncopy::after btncopy">
+          copy
+        </div>
+        <pre>
+      <code class="text-info" id="myjavascr">
+        console.log("Welcome to Programiz!");
+      </code>
+    </pre>
+      </div>
+    </div>
+    <div class="images images1"></div>
+    <!-- good basic  -->
+    <h2 class="text-center text-light m-4">Good Basic</h2>
+    <div class="container-fluid">
+      <div class="row justify-content-around pb-5 " style="background-color: #555; border-radius: 7px;">
+        <!-- html card -->
+        <div class="card bg-dark text-light col-lg-3 col-md-4 col-sm-6 m-1 mt-5" style="width: 18rem;">
+          <a href="" target="_blank">
+            <img src="pictures/HTML.png" class="card-img-top" alt="html pic"></a>
+          <div class="card-body">
+            <h5 class="card-title">HTML</h5>
+            <p class="card-text">html from zero to hero.</p>
+            <a href="" class="btn  mt-5  btn-primary">download the book</a>
+          </div>
+        </div>
+        <!-- /html card -->
+        <!-- css card -->
+        <div class="card bg-dark text-light col-lg-3 col-md-4 col-sm-6 m-1 mt-5" style="width: 18rem;">
+          <a href="" target="_blank">
+            <img src="pictures/css.png" class="card-img-top" alt="css pic"></a>
+          <div class="card-body">
+            <h5 class="card-title">CSS</h5>
+            <p class="card-text">Css from zero to hero.</p>
+            <a href="" class="btn mt-5 btn-primary">download the book</a>
+          </div>
+        </div>
+        <!-- /css card -->
+        <!-- js card -->
+        <div class="card bg-dark text-light col-lg-3 col-md-4 col-sm-6 m-1 mt-5" style="width: 18rem;">
+          <a href="" target="_blank">
+            <img src="pictures/JS.png" class="card-img-top" alt="css pic" height="265PX"></a>
+          <div class="card-body">
+            <h5 class="card-title">JavaScript</h5>
+            <p class="card-text">JavaScript from zero to hero.</p>
+            <a href="" class="btn  mt-3 btn-primary">download the book</a>
+          </div>
+        </div>
+        <!-- /JS card -->
+        <!-- java card -->
+        <div class="card bg-dark text-light col-lg-3 col-md-4 col-sm-6 m-1 mt-5" style="width: 18rem;">
+          <a href="" target="_blank">
+            <img src="pictures/java.webp" class="card-img-top" alt="css pic" height="265PX"></a>
+          <div class="card-body">
+            <h5 class="card-title">Java</h5>
+            <p class="card-text">Java from zero to hero.</p>
+            <a href="" class="btn mt-5  btn-primary">download the book</a>
+          </div>
+        </div>
+        <!-- /Java card -->
+        <!-- python card -->
+        <div class="card bg-dark text-light col-lg-3 col-md-4 col-sm-6 m-1 mt-5" style="width: 18rem;">
+          <a href="" target="_blank">
+            <img src="pictures/Python-Symbol.png" class="card-img-top" alt="css pic" height="265PX"></a>
+          <div class="card-body">
+            <h5 class="card-title">Python</h5>
+            <p class="card-text">Python from zero to hero.</p>
+            <a href="" class="btn  mt-3 btn-primary">download the book</a>
+          </div>
+        </div>
+        <!-- /python card -->
+        <!-- Bootstrap card -->
+        <div class="card bg-dark text-light col-lg-3 col-md-4 col-sm-6 m-1 mt-5" style="width: 18rem;">
+          <a href="" target="_blank">
+            <img src="pictures/bootstrap.png" class="card-img-top" alt="css pic" height="265PX"></a>
+          <div class="card-body">
+            <h5 class="card-title">Bootstrap</h5>
+            <p class="card-text">Bootstrap from zero to hero.</p>
+            <a href="" class="btn  mt-3 btn-primary">download the book</a>
+          </div>
+        </div>
+        <!-- /Bootstrap card -->
+        <!-- Json card -->
+        <div class="card bg-dark text-light col-lg-3 col-md-4 col-sm-6 m-1 mt-5" style="width: 18rem;">
+          <a href="" target="_blank">
+            <img src="pictures/json-logo.png" class="card-img-top" alt="css pic" height="265PX"></a>
+          <div class="card-body">
+            <h5 class="card-title">Json</h5>
+            <p class="card-text">Json from zero to hero.</p>
+            <a href="" class="btn  mt-5 btn-primary">download the book</a>
+          </div>
+        </div>
+        <!-- /Json card -->
+      </div>
+    </div>
+    <!-- /good basic -->
+    <div class="images images2">
+    </div>
+    <hr class="my-3">
+    <!-- thanks card-->
+    <h2 class="text-center text-light mb-2">Top Categories
+    </h2>
+    <div class="container-fluid thanks">
+      <div class="row justify-content-center">
+        <div class="card m-5 bg-dark text-light" style="width: 18rem;">
+          <img src="pictures/6.jpg" class="card-img-top" height="300px" alt="memo">
+          <div class="card-body">
+            <p class="card-text">Marketing</p>
+          </div>
+        </div>
+        <div class="card m-5 bg-dark text-light" style="width: 18rem;">
+          <img src="pictures/7.jpg" height="300px class=" class="card-img-top" alt="shimo">
+          <div class="card-body">
+            <p class="card-text">Development</p>
+          </div>
+        </div>
+        <div class="card m-5 bg-dark text-light" style="width: 18rem;">
+          <img src="pictures/5.avif" height="300px class=" class="card-img-top" alt="meme">
+          <div class="card-body">
+            <p class="card-text">Business</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="my-2">
+    <!-- join us -->
+    <h1 class="text-center text-light">Join Us</h1>
+    <div class="container-fluid">
+      <div class="row justify-content-center ">
+        <div class="card m-3  join" style="width: 250px;">
+          <div class="card-body text-light d-flex flex-column text-center">
+            <h6 class="card-title mb-4">Subscribe Now
+            </h6>
+            <input class="icons mb-2" style="align-self: center;" src="pictures/unnamed.png" type="image"
+              alt="facebook">
+            <a href="" target="_blank" class="card-link">Go to link</a>
+          </div>
+        </div>
+        <div class="card m-3  join" style="width: 250px;">
+          <div class="card-body text-light d-flex flex-column text-center">
+            <h6 class="card-title mb-4">Follow
+            </h6>
+            <input class="icons mb-2" style="align-self: center;" src="pictures/3621435.png" type="image"
+              alt="facebook">
+            <a href="" target="_blank" class="card-link">Go to link</a>
+          </div>
+        </div>
+        <div class="card m-3  join" style="width: 250px;">
+          <div class="card-body text-light d-flex flex-column text-center">
+            <h6 class="card-title mb-4">Like the page
+            </h6>
+            <input class="icons mb-2" style="align-self: center;" src="pictures/brand-download-img-1.jpg.twimg.1920.jpg"
+              type="image" alt="facebook">
+            <a href="" target="_blank" class="card-link">Go to link</a>
+          </div>
+        </div>
+        <div class="card m-3 join" style="width: 250px;">
+          <div class="card-body text-light d-flex flex-column text-center">
+            <h6 class="card-title mb-4">watch vedios
+            </h6>
+            <input class="icons mb-2" style="align-self: center;" src="pictures/facebook-512.webp" type="image"
+              alt="facebook">
+            <a href="" target="_blank" class="card-link ">Go to link</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /join us -->
+    <!-- footer -->
+    <footer class="bg-dark text-light mt-5 p-2 pb-5 foot ">
+      <div class="container-fluid">
+        <div class="row text-center">
+          <div class="col-md-4">
+            <hr class="border-top my-4">
+            <h4><img src="pictures/good.jpg" alt="good pic" class="icons"> Good Company</h4>
+            <hr class="border-top my-4">
+            <address>
+              <p>Tel : 000-000-000</p>
+              <p>Address : EGYPT</p>
+              <p>Fax : 000-000-000</p>
+            </address>
+          </div>
+          <div class="col-md-4">
+            <hr class="border-top my-4">
+            <h4><img src="pictures/download.jfif" alt="good pic" class="icons"> Important links</h4>
+            <hr class="border-top my-4">
+            <p><a href="" target="_blank">Visit Us</a></p>
+            <p><a href="" target="_blank">Take alook</a></p>
+            <p><a href="" target="_blank">Your health is more important</a></p>
+          </div>
+          <div class="col-md-4">
+            <hr class="border-top my-4">
+            <h4><img src="pictures/business-vision-concept-illustration_114360-7130.avif" alt="good pic" class="icons">
+              Vision</h4>
+            <hr class="border-top my-4">
+            <p>Serveices for all </p>
+            <p>Provide best serveices</p>
+            <p>you will be better than before</p>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <span class="text-center d-block text-secondary">Copyright &copy; 2023 Ahmed Alaa Khalifa, Good Company. All
+        rights</span>
+
+
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="script.js"></script>
+</body>
+
+</html>

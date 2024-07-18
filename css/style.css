@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.carousel-inner h1 {
+    text-shadow: 1px 1px #666666;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+.carousel-inner .carousel-caption {
+    background: #e1dada4d;
+    border-radius: 10px;
+}
+
+.carousel-inner a {
+    border-radius: 10px;
+    color: #f0eaea !important;
+}
+
+.stl {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.card-body h2 {
+    font-size: 30px;
+}
+
+.card-body p {
+    font-size: 20px;
+    text-transform: capitalize;
+
+}
+
+a {
+    text-decoration: none;
+    color: #0606ab !important;
+    text-transform: capitalize;
+    font-size: 17px;
+
+}
+
+a:hover {
+    color: #4a4a4a !important;
+}
+
+ul {
+    list-style: none;
+}
+
+code {
+    font-size: 20px !important;
+}
+
+.btnbefo {
+    position: relative;
+    left: 30px;
+}
+
+.btnbefo::before {
+    position: absolute;
+    content: "";
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent rgb(78, 183, 221) transparent;
+    top: 20px;
+    left: 13px;
+    display: none;
+}
+
+.btncopy::after {
+    position: absolute;
+    content: " ";
+    height: 40px;
+    width: 90px;
+    background-color: rgb(81, 197, 233);
+    top: 40px;
+    left: -10px;
+    border-radius: 3px;
+    display: none;
+}
+
+.btncopy:active::before,
+.btn:hover::before {
+    display: block;
+
+}
+
+.btncopy:hover::after {
+    content: "copy to clipboard";
+    display: block;
+}
+
+.btncopy:active::after {
+    content: "copied";
+    display: block;
+    height: 30px;
+}
+
+
+.images {
+    background-attachment: fixed;
+    background-size: cover;
+    height: 300px;
+}
+
+.images1 {
+    background-image: url(../pictures/16.jpg);
+}
+
+.images2 {
+    background-image: url(../pictures/2.jfif);
+
+}
+
+.icons {
+    height: 40px;
+    width: 40px;
+    border: 1px solid rgb(131, 131, 131);
+    border-radius: 15px;
+}
+
+.thanks {
+    background-color: #b9b9be;
+}
+
+/* ///////join */
+.join {
+    background-color: #676767 !important;
+    text-transform: capitalize;
+}
+
+.join a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #01012f !important;
+
+}
+
+/* footer..///// */
+.foot p {
+    color: #bcb9b9;
+    font-size: 19px;
+
+}
+
+.foot a {
+    text-decoration: none;
+    color: #090eff !important;
+
+}
+
+.foot span {
+    font-size: 15px !important;
+    color: aliceblue !important;
+}
+
+body {
+    font-family: "Rubik", sans-serif;
+    background-color: #9f9f9f !important;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media (min-width:768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width:992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width:1200px) {
+    .container {
+        width: 1170px;
+    }
+}
